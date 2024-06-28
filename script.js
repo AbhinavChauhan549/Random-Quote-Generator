@@ -1,0 +1,11 @@
+const btn = document.getElementById("btn")
+const output = document.querySelector(".output")
+
+let quote = ["Avoid daydreaming about years to come","The only true wisdom is in knowing you know nothing","Life can only be understood backwards; but it must be lived forwards","We are what we repeatedly do. Excellence, then, is not an act, but a habit","In the depth of winter, I finally learned that within me there lay an invincible summer","Do not go where the path may lead, go instead where there is no path and leave a trail","The greatest glory in living lies not in never falling, but in rising every time we fall","Your task is not to seek for love, but merely to seek and find all the barriers within yourself that you have built against it","The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well","He who has a why to live can bear almost any how","The wound is the place where the Light enters you","To live is the rarest thing in the world. Most people exist, that is all","It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change","Our lives begin to end the day we become silent about things that matter","The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science","Happiness is not something ready made. It comes from your own actions","The best way to find yourself is to lose yourself in the service of others.","What lies behind us and what lies before us are tiny matters compared to what lies within us","In three words I can sum up everything I've learned about life: it goes on","To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment","You must be the change you wish to see in the world."];
+
+btn.addEventListener("click",()=>{
+  console.log("clicked")
+  let random = Math.floor(Math.random()*quote.length)
+
+  output.textContent = quote[random];
+})
